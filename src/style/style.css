@@ -1,0 +1,126 @@
+/* Reset some default styles */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Style for Navbar */
+.navbar {
+    background-color: #ffcc29;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-list li a:hover {
+    color: #ff6600; /* Warna kuning yang cocok dengan tema Pokemon */
+}
+
+/* Style for the title/logo */
+.title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.title img {
+    max-width: 200px; /* Atur lebar gambar sesuai kebutuhan */
+    height: auto;
+}
+
+/* Style for the Pokemon card container using CSS Grid */
+.poke_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Menentukan 3 kolom */
+  gap: 20px; /* Ruang antara kartu */
+  max-width: 900px; /* Batasan lebar kontainer */
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Style for the Pokemon card */
+.pokemon-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for Pokemon name */
+h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for Pokemon image */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for Pokemon types */
+.types {
+  margin-top: 10px;
+}
+
+.types span {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 3px;
+}
+
+/* Style for the search input */
+.search {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Style for the link to the official Pokemon website */
+a img {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .poke_container {
+    grid-template-columns: repeat(2, 1fr); /* Mengubah menjadi 2 kolom pada layar lebar 768px atau lebih kecil */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .poke_container {
+    grid-template-columns: 1fr; /* Mengubah menjadi 1 kolom pada layar lebar 480px atau lebih kecil */
+  }
+}
